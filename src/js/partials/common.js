@@ -165,4 +165,36 @@ $(document).ready(function() {
 
     }).on('changed.owl.carousel');
 
+
+
+    // Mult  Slider
+    var owl = $("#sidebar_top_films");
+    owl.owlCarousel({
+        items: 1,
+        dots: false,
+        nav: true,
+        margin: 40,
+        merge: true,
+        responsive: {
+            0: {
+                items: 1,
+                dots: false,
+                nav: false,
+
+            },
+            600: {
+                items: 1,
+                nav: false,
+            },
+            1000: {
+                items: 1
+            }
+        },
+
+
+        responsiveRefreshRate: 200,
+        navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+
+    }).on('changed.owl.carousel');
+
 });
