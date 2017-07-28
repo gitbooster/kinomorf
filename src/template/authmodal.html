@@ -1,0 +1,111 @@
+<!-- Modal Auth -->
+<div class="modal fade " id="authModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm " role="document">
+        <div class="modal-content auth_modal">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Вход</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="email" class="form-control" id="login" placeholder="E-mail" required/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="password" class="form-control" id="Password" placeholder="Пароль" required/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class=" col-sm-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" /> Запомнить меня
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn  btn-auth btn-block">Войти</button>
+                        </div>
+                    </div>
+                    <div class="autH-another-action text-center">
+                        <a class="registerLink" href="#" data-toggle="modal" data-target="#reg_modal" data-dismiss="modal">
+                 <span class="value">Регистрация</span>
+              </a>нового аккаунта
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer ">
+                <p class="authTitle">Авторизация через социальные сети</p>
+                <p>
+                    <a class="btn btn-primary social-login-btn social-vk" href=""><i class="fa fa-vk"></i></a><a class="btn btn-primary social-login-btn social-facebook" href=""><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-primary social-login-btn social-twitter" href=""><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-primary social-login-btn social-ok" href=""><i class="fa fa-odnoklassniki"></i></a>
+                    <a class="btn btn-primary social-login-btn social-google" href=""><i class="fa fa-google-plus"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Modal-Регистрация -->
+
+<div class="modal fade" id="reg_modal" tabindex="-1" role="dialog" aria-label="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content auth_modal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Регистрация</h4>
+      </div>
+      <div class="modal-body">
+                <form class="form-horizontal">
+
+ <div class="form-group">
+     <div class="col-sm-12">
+         <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail">
+     </div>
+ </div>
+
+ <div class="form-group">
+     <div class="col-sm-12">
+         <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль">
+     </div>
+ </div>
+
+ <div class="form-group">
+     <div class="col-sm-12">
+         <div class="personal_register_2 text-center">
+        Регистрируя новый аккаунт, вы принимаете условия <a href="#">пользовательского соглашения</a>
+         </div>
+     </div>
+ </div>
+ <div class="form-group">
+     <div class="col-sm-12">
+         <button type="submit" class="btn btn-auth btn-block">Зарегистрироватся</button>
+         <br><br>
+         <div class="personal_register text-center">
+<a class="" href="#" data-toggle="modal" data-target="#authModal" data-dismiss="modal">Вход</a>в существующий аккаунт
+</div>
+     </div>
+ </div>
+</form>
+      </div>
+     <div class="modal-footer ">
+                <p class="authTitle">Авторизация через социальные сети</p>
+                <p>
+                    <a class="btn btn-primary social-login-btn social-vk" href=""><i class="fa fa-vk"></i></a><a class="btn btn-primary social-login-btn social-facebook" href=""><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-primary social-login-btn social-twitter" href=""><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-primary social-login-btn social-ok" href=""><i class="fa fa-odnoklassniki"></i></a>
+                    <a class="btn btn-primary social-login-btn social-google" href=""><i class="fa fa-google-plus"></i></a>
+                </p>
+            </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
