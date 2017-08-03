@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-fixed-top navbar_l_and_d" role="navigation" >
+<nav class="navbar navbar-inverse navbar-fixed-top navbar_l_and_d" role="navigation">
     <div class="header-inner">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -9,13 +9,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <ul class="mobile_menu visible-xs">
+                    <li class="auth_color"><a href="#" data-toggle="modal" data-target="#authModal"><i class="fa fa-user" aria-hidden="true"></i><span class="hide_smol_devices"> webtheory</span></a></li>
+                </ul>
                 <a class="navbar-brand" href="/">KINOMORF</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
                     <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Фильмы <span class="caret"></span> </a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Фильмы <span class="caret"></span> </a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Фильмы</a></li>
                             <li><a href="#">Сериалы</a></li>
@@ -36,16 +39,27 @@
                         </ul>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i> Поиск</a></li>
-                    <li class="auth_color"><a href="#" data-toggle="modal" data-target="#authModal">Вход</a></li>
-                    <li class="auth_color"><a href="#" data-toggle="modal" data-target="#reg_modal">Регистрация</a></li>
+                <ul class="nav navbar-nav navbar-right hidden-xs">
+                    //= search.html
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                       
+                        webtheory <span class="caret"></span> </a>
+                        <ul class="dropdown-menu pull-left">
+                            <li><a href="" target="_blank"><b>Админпанель</b></a></li>
+                            <li><a href="">Мой профиль</a></li>
+                            <li><a href="">Мои закладки</a></li>
+                            <li><a href="">Непрочитанное</a></li>
+                            <li><a href="">Последние комментарии</a></li>
+                            <li><a href="">Выход</a></li>
+                        </ul>
+                </ul>
+                </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-        </div>
+    </div>
 </nav>
-
 <!-- /.navbar -->

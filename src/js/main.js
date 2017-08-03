@@ -4,6 +4,7 @@
 
 /* Custom*/
 //= partials/owl.carousel.min.js
+//= partials/readmore.js
 //= partials/common.js
 
 

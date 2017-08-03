@@ -68,7 +68,30 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right hidden-xs">
-                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i> Поиск</a></li>
+                    <li>
+                    <div class="search-hint" id="searchHint">
+                        <div class="search-hint-inner">
+                            <div class="search-hint-form" >
+                                <form role="search" method="get" class="form" action="/">
+                                    <div class="search-hint-placeholder"> Поиск </div>
+                                    <input class="search-hint-input" id="searchHintInput" type="text" name="s" autocomplete="off">
+                                    <input type="hidden" id="searchHintCategory" value="">
+                                    <input type="hidden" id="searchHintUrl" value="/searchhint" disabled="">
+                                    <div class="search-hint-submit">
+                                        <i class="icon icon--default"></i>
+                                        <i class="icon icon--hover"></i>
+                                        <i class="icon icon--active"></i></div>
+                                    <button class="search-hint-reset" type="reset" title="Отменить">
+                                        <i class="icon icon--default"></i>
+                                        <i class="icon icon--hover"></i>
+                                        <i class="icon icon--active"></i></button>
+                                </form>
+                            </div>
+                            <div class="search-hint-results" id="searchHintResults">
+                            </div>
+                        </div>
+                    </div>
+                    </li>
                     <li class="auth_color"><a href="#" data-toggle="modal" data-target="#authModal">Вход</a></li>
                     <li class="auth_color"><a href="#" data-toggle="modal" data-target="#reg_modal">Регистрация</a></li>
                 </ul>
@@ -371,185 +394,128 @@
             <div class="col-md-12 premiere_c">
                 <h3>Фильмы</h3>
             </div>
-            
         </div>
     </div>
-    <!-- Carousel_2 -->
-    <div class="container">
-        <div class="slider_premiere_container">
-            <div id="slider_films" class="owl-carousel owl-theme ">
-                
-                <div class="marime">
-                    
-                    <a href="#" class="over">
-                    <span>HD</span>
-                        <div class="premiere_overlay">
-                            <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div>
-                        <img src="assets/img/img_1.jpg" alt="alt">
-                    </a>
-                    <a href="#" class="title_premiere">Призрак в Доспехах</a>
-                    <br>
-                    <small>2017, США, Боевики</small>
-                </div>
-                <div class="marime">
-                    
+    <!-- Carusel-3 -->
+    <div class="container personal_top">
+        <div class="slider_container_2">
+            <div id="carusel_3" class="owl-carousel owl-theme personal_owl_3 personal_c_film">
+<!-- Big Story -->
+                <div class="marime  big_story">
                     <a href="#" class="over">
                     <span>TS</span>
                         <div class="premiere_overlay">
                             <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div><img src="assets/img/img_2.jpg" alt="alt"></a>
+                        </div><img src="assets/img/films_470x270.jpg" alt="alt"></a>
                     <a href="#" class="title_premiere">СПАРК. Герой Вселенной</a>
                     <br>
                     <small>2017, Канада, Комедии</small>
                 </div>
-                <div class="marime">
-                    
-                    <a href="#" class="over">
-                    <span>DVD</span>
-                        <div class="premiere_overlay">
-                            <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div><img src="assets/img/img_3.jpg" alt="alt"></a>
-                    <a href="#" class="title_premiere">Большой</a>
+<!-- Big Story -->
+
+<!-- smoll Story colums -->
+<div class="films_colums">
+    <div class="pear">
+        <div class="marime">
+            <a href="#" class="over">
+                <span>TS</span>
+                <div class="premiere_overlay">
+                    <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
+                </div><img src="assets/img/img_1.jpg" alt="alt"></a>
+                <a href="#" class="title_premiere">СПАРК. Герой Вселенной</a>
+                <br>
+                <small>2017, Канада, Комедии</small>
+            </div>
+            <div class="marime">
+                <a href="#" class="over">
+                    <span>TS</span>
+                    <div class="premiere_overlay">
+                        <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
+                    </div><img src="assets/img/films_215x120_2.jpg" alt="alt"></a>
+                    <a href="#" class="title_premiere">СПАРК. Герой Вселенной</a>
                     <br>
-                    <small>2017, Россия, Драмы</small>
+                    <small>2017, Канада, Комедии</small>
                 </div>
+            </div>
+
+            <div class="pear_2">
                 <div class="marime">
-                    
                     <a href="#" class="over">
-                    <span>camrip</span>
+                        <span>TS</span>
                         <div class="premiere_overlay">
                             <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div><img src="assets/img/img_4.jpg" alt="alt"></a>
-                    <a href="#" class="title_premiere">Перестрелка</a>
-                    <br>
-                    <small>2017, Великобритания, Франция, Боевики</small>
-                </div>
-                <div class="marime">
-                    
-                    <a href="#" class="over">
-                    <span>DVD</span>
-                        <div class="premiere_overlay">
-                            <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div><img src="assets/img/img_5.jpg" alt="alt"></a>
-                    <a href="#" class="title_premiere">Соседи. На тропе войны 2</a>
-                    <br>
-                    <small>2016, США, Комедии</small>
-                </div>
-                <div class="marime">
-                    
-                    <a href="#" class="over">
-                    <span>DVD</span>
-                        <div class="premiere_overlay">
-                            <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div><img src="assets/img/img_6.jpg" alt="alt"></a>
-                    <a href="#" class="title_premiere">Т2.Трейнспоттинг</a>
-                    <br>
-                    <small>2017, Великобритания, Драмы</small>
-                </div>
-                <div class="marime">
-                    
-                    <a href="#" class="over">
-                    <span>DVD</span>
-                        <div class="premiere_overlay">
-                            <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div><img src="assets/img/img_7.jpg" alt="alt"></a>
-                    <a href="#" class="title_premiere">Смурфики. Затерянная деревня</a>
-                    <br>
-                    <small>2017, США, Комедии</small>
-                </div>
-                <div class="marime">
-                    
-                    <a href="#" class="over">
-                    <span>DVD</span>
-                        <div class="premiere_overlay">
-                            <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div><img src="assets/img/img_8.jpg" alt="alt"></a>
-                    <a href="#" class="title_premiere">Мальчишник в Паттайе</a>
-                    <br>
-                    <small>2017, Франция, Комедии</small>
-                </div>
-                <div class="marime">
-                    
-                    <a href="#" class="over">
-                    <span>DVD</span>
-                        <div class="premiere_overlay">
-                            <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div><img src="assets/img/img_9.jpg" alt="alt"></a>
-                    <a href="#" class="title_premiere">Чёрная бабочка</a>
-                    <br>
-                    <small>2017, США, Триллеры</small>
-                </div>
-                <div class="marime">
-                    
-                    <a href="#" class="over">
-                    <span>DVD</span>
-                        <div class="premiere_overlay">
-                            <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div><img src="assets/img/img_10.jpg" alt="alt"></a>
-                    <a href="#" class="title_premiere">Месть яйца</a>
-                    <br>
-                    <small>2014, Венгрия, Зарубежные</small>
-                </div>
-                <div class="marime">
-                    
-                    <a href="#" class="over">
-                    <span>ПОКУПКА</span>
-                        <div class="premiere_overlay">
-                            <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div><img src="assets/img/img_11.jpg" alt="alt"></a>
-                    <a href="#" class="title_premiere">форзаж 8</a>
-                    <br>
-                    <small>2017, США, Япония, Боевики</small>
-                </div>
-                <div class="marime">
-                    
-                    <a href="#" class="over">
-                    <span>ПОКУПКА</span>
-                        <div class="premiere_overlay">
-                            <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div><img src="assets/img/img_12.jpg" alt="alt"></a>
-                    <a href="#" class="title_premiere">Пробуждение зодиака (Предзаказ)</a>
-                    <br>
-                    <small>2017, Канада, Триллеры</small>
-                </div>
-                <div class="marime">
-                 
-                    <a href="#" class="over">
-                       <span>ПОКУПКА</span>
-                        <div class="premiere_overlay">
-                            <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div><img src="assets/img/img_13.jpg" alt="alt"></a>
-                        <a href="#" class="title_premiere">Его.сабачье дело</a>
+                        </div><img src="assets/img/films_215x120_12.jpg" alt="alt"></a>
+                        <a href="#" class="title_premiere">СПАРК. Герой Вселенной</a>
                         <br>
-                        <small>2017, США, Комедии</small>
+                        <small>2017, Канада, Комедии</small>
+                    </div>
+                    <div class="marime">
+                        <a href="#" class="over">
+                            <span>TS</span>
+                            <div class="premiere_overlay">
+                                <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
+                            </div><img src="assets/img/films_215x120_11.jpg" alt="alt"></a>
+                            <a href="#" class="title_premiere">СПАРК. Герой Вселенной</a>
+                            <br>
+                            <small>2017, Канада, Комедии</small>
+                        </div>
+                    </div>
                 </div>
+
+<!-- smoll Story colums -->
+<!-- smoll Story colums -->
+<div class="films_colums">
+    <div class="pear">
+        <div class="marime">
+            <a href="#" class="over">
+                <span>TS</span>
+                <div class="premiere_overlay">
+                    <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
+                </div><img src="assets/img/films_215x120_10.jpg" alt="alt"></a>
+                <a href="#" class="title_premiere">СПАРК. Герой Вселенной</a>
+                <br>
+                <small>2017, Канада, Комедии</small>
+            </div>
+            <div class="marime">
+                <a href="#" class="over">
+                    <span>TS</span>
+                    <div class="premiere_overlay">
+                        <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
+                    </div><img src="assets/img/films_215x120_6.jpg" alt="alt"></a>
+                    <a href="#" class="title_premiere">СПАРК. Герой Вселенной</a>
+                    <br>
+                    <small>2017, Канада, Комедии</small>
+                </div>
+            </div>
+            
+            <div class="pear_2">
                 <div class="marime">
-                    
                     <a href="#" class="over">
-                     <span>ПОКУПКА</span>
+                        <span>TS</span>
                         <div class="premiere_overlay">
                             <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div><img src="assets/img/img_14.jpg" alt="alt"></a>
-                    <a href="#" class="title_premiere">Мир.Юрского периода</a>
-                    <br>
-                    <small>2017, США, Приключения</small>
+                        </div><img src="assets/img/films_215x120_7.jpg" alt="alt"></a>
+                        <a href="#" class="title_premiere">СПАРК. Герой Вселенной</a>
+                        <br>
+                        <small>2017, Канада, Комедии</small>
+                    </div>
+                    <div class="marime">
+                        <a href="#" class="over">
+                            <span>TS</span>
+                            <div class="premiere_overlay">
+                                <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
+                            </div><img src="assets/img/films_215x120_8.jpg" alt="alt"></a>
+                            <a href="#" class="title_premiere">СПАРК. Герой Вселенной</a>
+                            <br>
+                            <small>2017, Канада, Комедии</small>
+                        </div>
+                    </div>
                 </div>
-                <div class="marime">
-                    
-                    <a href="#" class="over">
-                    <span>ПОКУПКА</span>
-                        <div class="premiere_overlay">
-                            <div class="watch"><i class="fa fa-play" aria-hidden="true"></i></div>
-                        </div><img src="assets/img/img_15.jpg" alt="alt"></a>
-                    <a href="#" class="title_premiere">Невадление</a>
-                    <br>
-                    <small>2017, США, Триллеры1</small>
-                </div>
+
+<!-- smoll Story colums -->
             </div>
         </div>
     </div>
-</div>
 <!-- Serial-->
 <div class="serial_slider">
     <div class="container">
